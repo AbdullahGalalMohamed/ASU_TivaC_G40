@@ -13,26 +13,49 @@
  *                      Functions Prototypes                                   *
  *******************************************************************************/
 
-void PortA_Init(void);
+/*
+Initialize port(A,B,D) by enabling
+the clock, unlocking the port, and making the selected mode
+digital and change the direction of the selected pins to output
+*/
+
+void PortA_Init(void); 
 
 void PortB_Init(void);
 
 void PortD_Init(void);
 
+/*
+Connect sw2 to internal pull-down resistor "Reset button"
+Connect sw0 to internal pull-up resistor "Decrement button"
+Connect sw1 to internal pull-up resistor "Increment button"
+
+Initialize port(F & E) by enabling
+the clock, unlocking the port, and making the selected mode
+digital and change the direction of the selected pins to input 
+*/
 void SW1_Init(void);
 
 void SW0_Init(void);
 
 void SW2_Init(void);
 
+/* 
+Call initialization functions for switches and ports
+*/
 void SystemInit(void);
-
+/*
+Reset the counter (Data of port A & port B & port D)
+*/
 void reset(void);
 
+/*
+Increment the counter (Data of port A & port B & port D)
+*/
 void Increment(void);
 
+/*
+Decrement the counter (Data of port A & port B & port D)
+*/
+
 void Decrement(void);
-
-
-
-
