@@ -4,8 +4,8 @@
 
 # Make acounter using Tiva c 
 
-#Student Names:
-Abdullah Galal
-Abdelhady Ahmed
-Sara AbdellKhalek
-Shrouk Ragheb 
+# Student Names:
+* Abdullah Galal
+* Abdelhady Ahmed
+* Sara AbdellKhalek
+* Shrouk Ragheb 
