@@ -2,7 +2,7 @@
 
 # Microcontroller project : Tiva c
 
-# Make acounter using Tiva c 
+# Make a counter using Tiva c 
 
 # Student Names:
 * Abdullah Galal
