@@ -5,7 +5,7 @@
 # Make a counter using Tiva c 
 
 # Student Names:
-* Abdullah Galal
-* Abdelhady Ahmed
-* Sara AbdellKhalek
-* Shrouk Ragheb 
+* Abdullah Galal      *Section:2 
+* Abdelhady Ahmed     *Section:2 
+* Sara AbdellKhalek   *Section:2 
+* Shrouk Ragheb       *Section:2 
