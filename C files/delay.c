@@ -1,4 +1,5 @@
 #include "fun.h"
+//Delay in milli seconds
 
 void delay_milli(int n)
 {
