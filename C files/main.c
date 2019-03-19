@@ -38,3 +38,26 @@ while(1)
 					
 	}
   }
+		else if((GPIOF->DATA&0x01)==0x00) 
+	{
+		delay = SYSCTL_RCGCGPIO_R;
+		//second check due to switch de-bouncing
+    if((GPIOF->DATA&0x01U)==0x00)
+		{
+			Decrement();
+		}
+		while((GPIOF->DATA&0x01U)==0x00)
+		{
+		}
+	}
+	
+			else if((GPIOB->DATA&0x80U)==0x01) 
+			{
+				 while((GPIOA->DATA&0x80U)==0x01)
+				 {
+					
+				 }
+				 reset();
+			}
+}   
+}
