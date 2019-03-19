@@ -1,7 +1,8 @@
 #include "fun.h"
 
 
-void SW1_Init(){  //increment
+void SW1_Init()
+{  //increment
 	
 	SYSCTL->RCGCGPIO |= 0x20;  // enable mode clk for port A
 	while ((SYSCTL->RCGCGPIO & 0x20) == 0) {} ; //delay
@@ -15,6 +16,7 @@ void SW1_Init(){  //increment
 	GPIOF->DEN |= 0x10U;	
 				
 }
+
 void SW0_Init(){  //Decrement
 	
 	SYSCTL->RCGCGPIO |= 0x20;  
@@ -30,7 +32,8 @@ void SW0_Init(){  //Decrement
 				
 }
 
-void SW2_Init(){  //Reset
+void SW2_Init()
+{  //Reset
 	
 	SYSCTL->RCGCGPIO |= 0x02;  
 	while ((SYSCTL->RCGCGPIO & 0x02) == 0) {} ; //delay
