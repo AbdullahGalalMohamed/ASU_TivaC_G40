@@ -11,7 +11,7 @@ void PortA_Init()
   GPIOA->PCTL &= ~GPIO_PCTL_PA7654_M;
   GPIOA->AFSEL &= ~0xC0;
   GPIOA->DIR |= 0xC0;
-	GPIOA->DEN |= 0xC0;
+	GPIOA->DEN |= 0xC0;//Enable pin to be in digital mode
   GPIOA->DATA &= 0xF0;		
 }
 
@@ -25,7 +25,7 @@ void PortB_Init()
     GPIOB->PCTL&= ~GPIO_PCTL_PB3210_M;
 		GPIOB->AFSEL&= ~0x7F;
 		GPIOB->DIR|= 0x7F;
-		GPIOB->DEN |= 0x7F;
+		GPIOB->DEN |= 0x7F;//Enable pin to be in digital mode
     GPIOB->DATA&= 0x00;
 }
 
@@ -40,7 +40,7 @@ void PortE_Init()
     GPIOE->PCTL&= ~GPIO_PCTL_PE12345_M;
 		GPIOE->AFSEL&= ~0x3E;
 		GPIOE->DIR|= 0x3E;
-		GPIOE->DEN |= 0x3E;
+		GPIOE->DEN |= 0x3E;//Enable pin to be in digital mode
     GPIOE->DATA&= 0x00;
 }
 
@@ -54,7 +54,7 @@ void PortC_Init()
      GPIOC->PCTL&= ~GPIO_PCTL_PC654_M;
 		 GPIOC->AFSEL&= ~0x70;
 		 GPIOC->DIR|= 0x70;
-		 GPIOC->DEN |= 0x70;
+		 GPIOC->DEN |= 0x70;//Enable pin to be in digital mode
      GPIOC->DATA&= 0x0F;			 
 }
 void PortD_Init()
@@ -67,6 +67,6 @@ void PortD_Init()
      GPIOD->PCTL&= ~GPIO_PCTL_PD3210_M;
 		 GPIOD->AFSEL&= ~0x0F;
 		 GPIOD->DIR|= 0x0F;
-		 GPIOD->DEN |= 0x0F;
+		 GPIOD->DEN |= 0x0F;//Enable pin to be in digital mode
      GPIOD->DATA&= 0xF0;			 
 }
