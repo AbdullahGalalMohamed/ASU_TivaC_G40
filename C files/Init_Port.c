@@ -17,7 +17,7 @@ void PortA_Init()
 
 void PortB_Init()
 {
-		SYSCTL->RCGCGPIO |= 0x02;  // enable mode clk for port A
+		SYSCTL->RCGCGPIO |= 0x02;  // enable mode clk for port B
 		while ((SYSCTL->RCGCGPIO & 0x02) == 0) {} ; //delay
 		GPIOB->LOCK=GPIO_LOCK_KEY;
 		GPIO_PORTB_CR_R |= 0x7F;
@@ -32,7 +32,7 @@ void PortB_Init()
 void PortE_Init()
 {
 	//pin2,3,4
-		SYSCTL->RCGCGPIO |= 0x10;  // enable mode clk for port A
+		SYSCTL->RCGCGPIO |= 0x10;  // enable mode clk for port E
 		while ((SYSCTL->RCGCGPIO & 0x10) == 0) {} ; //delay
 		GPIOE->LOCK=GPIO_LOCK_KEY;
 		GPIO_PORTE_CR_R |= 0x3E;
@@ -46,7 +46,7 @@ void PortE_Init()
 
 void PortC_Init()
 {
-	   SYSCTL->RCGCGPIO |= 0x04;  // enable mode clk for port A
+	   SYSCTL->RCGCGPIO |= 0x04;  // enable mode clk for port C
 		 while ((SYSCTL->RCGCGPIO & 0x04) == 0) {} ; //delay
 		 GPIOC->LOCK=GPIO_LOCK_KEY;
      GPIO_PORTC_CR_R |= 0x70;		
@@ -59,7 +59,7 @@ void PortC_Init()
 }
 void PortD_Init()
 {
-	   SYSCTL->RCGCGPIO |= 0x08;  // enable mode clk for port A
+	   SYSCTL->RCGCGPIO |= 0x08;  // enable mode clk for port D
 		 while ((SYSCTL->RCGCGPIO & 0x08) == 0) {} ; //delay
 		 GPIOD->LOCK=GPIO_LOCK_KEY;
      GPIO_PORTD_CR_R |= 0x0F;		
