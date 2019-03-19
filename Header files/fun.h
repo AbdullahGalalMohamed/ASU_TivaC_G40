@@ -72,7 +72,8 @@ void Decrement(void);
 
 */
 void Decoder (int count ,int index);
-//Delay
+
+//Delay in milli seconds
 
 
 void delay_milli(int n);
