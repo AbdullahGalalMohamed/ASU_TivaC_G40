@@ -40,3 +40,26 @@ while(1)
 					
 	}
 }
+		else if(DIO_ReadPort ( 5 , 0x01)==0x00) 
+	{
+		delay = SYSCTL_RCGCGPIO_R;
+		//second check due to switch de-bouncing
+    if(DIO_ReadPort ( 5 , 0x01)==0x00)
+		{
+			Decrement();
+		}
+		while(DIO_ReadPort ( 5 , 0x01)==0x00)
+		{
+		}
+	}
+	
+			else if(DIO_ReadPort ( 1 , 0x80U )==0x01) 
+			{
+				 while(DIO_ReadPort ( 1 , 0x80U)==0x01)
+				 {
+					
+				 }
+				 reset();
+			}
+}   
+}
