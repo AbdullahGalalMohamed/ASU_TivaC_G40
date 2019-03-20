@@ -15,3 +15,15 @@ LCD_Cmd(0x0F); //Turn on display
 LCD_Cmd(0x01); //clear display
  
 }
+
+void LCD_Cmd(unsigned char command)
+{
+
+GPIOE->DATA =0x00; //RS=0, E=0,RW=0
+GPIOB->DATA =command;
+GPIOE->DATA |= 0x08;
+delay_micro(0);
+GPIOE->DATA = 0x00;
+delay_micro(2000); 
+if(command <4) delay_milli(2); else delay_micro(37); 
+}
