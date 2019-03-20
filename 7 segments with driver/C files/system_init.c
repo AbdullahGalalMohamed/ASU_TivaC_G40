@@ -24,3 +24,22 @@ void SystemInit(){
 	Port_Init (4);
 	Port_SetPinDirection ( 4 , GPIO_PE54321_M  , 1);
 	 
+  //SW0_Init();
+	Port_Init (5);
+	Port_SetPinDirection ( 5 , 0x01  , 0);
+	Port_SetPinPullUp (5 , 0x01 , 1 );
+
+	 
+	//SW1_Init();
+	
+	Port_Init (5);
+	Port_SetPinDirection ( 5 , 0x10  , 0);
+	Port_SetPinPullUp (5 , 0x10 , 1 );
+
+  
+  //SW2_Init();
+	
+	Port_Init (1);
+	Port_SetPinDirection ( 1 , 0x10  , 0);
+	Port_SetPinPullDown (1 , 0x10 , 1 );
+}
