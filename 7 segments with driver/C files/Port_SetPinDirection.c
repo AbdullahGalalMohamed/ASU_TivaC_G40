@@ -30,3 +30,37 @@ void Port_SetPinDirection (uint8_t port_index , uint8_t pins_mask, enum Port_Pin
 						GPIOC->DIR &= ~ pins_mask;
 					}
 					break;
+					
+		case 3 : 
+					{
+					if(pins_direction)
+						GPIOD->DIR|= pins_mask;
+						else
+						GPIOD->DIR &= ~ pins_mask;
+					}
+					
+					break;
+		case 4 : 
+					{
+					if(pins_direction)
+						GPIOE->DIR|= pins_mask ;
+						else
+						GPIOE->DIR &= ~ pins_mask;
+					}
+					
+					break;
+		case 5 : 
+					{
+					if(pins_direction)
+						GPIOF->DIR|= pins_mask;
+						else
+						GPIOF->DIR &= ~ pins_mask;
+					}
+					break;
+	}
+		
+}
+
+
+
+
