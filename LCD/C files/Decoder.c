@@ -68,3 +68,46 @@ void Decoder (int count ,int index)
 			//GPIOE->DATA = 0x5B;
 		break;
 		}
+		case 6:
+		{	
+		if (index==1)
+			GPIOB->DATA = 0x02;
+		//else if (index ==2)
+		//GPIOD->DATA = 0x5F;
+		//else if (index ==3)
+			//GPIOE->DATA = 0x5F;
+		break;
+		}
+		case 7:
+		{	
+		if (index==1)
+			GPIOB->DATA = 0x78;
+		//else if (index ==2)
+		//GPIOD->DATA = 0x70;
+		//else if (index ==3)
+			//GPIOE->DATA = 0x70;
+		break;
+		}
+		case 8:
+		{	
+		if (index==1)
+			GPIOB->DATA = 0x00;
+		//else if (index ==2)
+		//GPIOD->DATA = 0x7F;
+		//else if (index ==3)
+			//GPIOE->DATA = 0x7F;
+		break;
+		}
+		case 9:
+		{	
+		if (index==1)
+			GPIOB->DATA = 0x10;
+		//else if (index ==2)
+		//GPIOD->DATA = 0x7B;
+		//else if (index ==3)
+			//GPIOE->DATA = 0x7B;
+		break;
+		}	
+	}		
+}
+
